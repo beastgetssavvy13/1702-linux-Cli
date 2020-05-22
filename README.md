@@ -12,7 +12,8 @@ _My journey of 1702 lines of linux commands using vmwareworkstation_
 ## Technologies Used: 
 :electric_plug: WINDOWS OS :electric_plug: VMWARE WORKSTATION :electric_plug: UBUNTU DESKTOP :electric_plug: VI EDITOR <br>
 
-## What is this repository for? 
+
+## Who is this repository for? 
 
 A Windows Os User Keen To Learn Essential Linux Commands. Provided below Link to My Journey Of Using Basic Linux Commands Through Emulator Linux. And also provided is list of many useful basic linux command lines that I used.
 
