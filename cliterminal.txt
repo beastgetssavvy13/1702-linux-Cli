@@ -1,0 +1,1703 @@
+### Commands Used
+|-------------------------------------------------------|
+### pwd and cd
+
+pwd prints out the current working directory
+cd is used to change the curretn directory
+kavish178@ubuntu:~$ pwd
+/home/kavish178
+cd for changing location
+going ot the root directory
+kavish178@ubuntu:~$ cd /
+going to the ~ home  directory
+kavish178@ubuntu:/$ cd ~
+kavish178@ubuntu:~$
+
+### ls command which will list the files in a directoy
+kavish178@ubuntu:~$ pwd
+/home/kavish178
+kavish178@ubuntu:~$ cd /
+kavish178@ubuntu:/$ cd ~
+kavish178@ubuntu:~$ cd /
+kavish178@ubuntu:/$ pwd
+/
+kavish178@ubuntu:/$ ls
+bin    dev   lib    libx32      mnt   root  snap      sys  var
+boot   etc   lib32  lost+found  opt   run   srv       tmp
+cdrom  home  lib64  media       proc  sbin  swapfile  usr
+kavish178@ubuntu:/$ ^C
+kavish178@ubuntu:/$
+lot of options we can use with ls commands
+
+### ls -l will list the files in a drirectory showing details
+------------------------
+kavish178@ubuntu:/$ ls -l
+total 459344
+lrwxrwxrwx   1 root root         7 May 21 09:41 bin -> usr/bin
+drwxr-xr-x   4 root root      4096 May 21 10:47 boot
+drwxrwxr-x   2 root root      4096 May 21 09:44 cdrom
+drwxr-xr-x  18 root root      4180 May 21 22:08 dev
+drwxr-xr-x 129 root root     12288 May 21 10:50 etc
+drwxr-xr-x   3 root root      4096 May 21 10:43 home
+lrwxrwxrwx   1 root root         7 May 21 09:41 lib -> usr/lib
+lrwxrwxrwx   1 root root         9 May 21 09:41 lib32 -> usr/lib32
+lrwxrwxrwx   1 root root         9 May 21 09:41 lib64 -> usr/lib64
+lrwxrwxrwx   1 root root        10 May 21 09:41 libx32 -> usr/libx32
+drwx------   2 root root     16384 May 21 09:40 lost+found
+drwxr-xr-x   4 root root      4096 May 21 11:30 media
+drwxr-xr-x   2 root root      4096 Apr 23 00:32 mnt
+drwxr-xr-x   2 root root      4096 May 21 10:50 opt
+dr-xr-xr-x 290 root root         0 May 21 22:07 proc
+drwx------   4 root root      4096 May 21 11:26 root
+drwxr-xr-x  31 root root       820 May 21 22:07 run
+lrwxrwxrwx   1 root root         8 May 21 09:41 sbin -> usr/sbin
+drwxr-xr-x  10 root root      4096 May 21 11:26 snap
+drwxr-xr-x   2 root root      4096 Apr 23 00:32 srv
+-rw-------   1 root root 470287360 May 21 09:40 swapfile
+dr-xr-xr-x  13 root root         0 May 21 22:07 sys
+drwxrwxrwt  23 root root      4096 May 21 22:37 tmp
+drwxr-xr-x  14 root root      4096 Apr 23 00:34 usr
+drwxr-xr-x  14 root root      4096 Apr 23 00:42 var
+kavish178@ubuntu:/$-----------------------
+size written in bytes permission
+last  modified  date
+user into group that own the file and the permissions
+
+###ls -lh
+
+will list the files in a directory   in  human readable format
+kavish178@ubuntu:/$ ls -lh
+total 449M
+lrwxrwxrwx   1 root root    7 May 21 09:41 bin -> usr/bin
+drwxr-xr-x   4 root root 4.0K May 21 10:47 boot
+drwxrwxr-x   2 root root 4.0K May 21 09:44 cdrom
+drwxr-xr-x  18 root root 4.1K May 21 22:08 dev
+drwxr-xr-x 129 root root  12K May 21 10:50 etc
+drwxr-xr-x   3 root root 4.0K May 21 10:43 home
+lrwxrwxrwx   1 root root    7 May 21 09:41 lib -> usr/lib
+lrwxrwxrwx   1 root root    9 May 21 09:41 lib32 -> usr/lib32
+lrwxrwxrwx   1 root root    9 May 21 09:41 lib64 -> usr/lib64
+lrwxrwxrwx   1 root root   10 May 21 09:41 libx32 -> usr/libx32
+drwx------   2 root root  16K May 21 09:40 lost+found
+drwxr-xr-x   4 root root 4.0K May 21 11:30 media
+drwxr-xr-x   2 root root 4.0K Apr 23 00:32 mnt
+drwxr-xr-x   2 root root 4.0K May 21 10:50 opt
+dr-xr-xr-x 291 root root    0 May 21 22:07 proc
+drwx------   4 root root 4.0K May 21 11:26 root
+drwxr-xr-x  31 root root  820 May 21 22:07 run
+lrwxrwxrwx   1 root root    8 May 21 09:41 sbin -> usr/sbin
+drwxr-xr-x  10 root root 4.0K May 21 11:26 snap
+drwxr-xr-x   2 root root 4.0K Apr 23 00:32 srv
+-rw-------   1 root root 449M May 21 09:40 swapfile
+dr-xr-xr-x  13 root root    0 May 21 22:07 sys
+drwxrwxrwt  24 root root 4.0K May 21 22:52 tmp
+drwxr-xr-x  14 root root 4.0K Apr 23 00:34 usr
+drwxr-xr-x  14 root root 4.0K Apr 23 00:42 var
+kavish178@ubuntu:/$
+easy to read format and ls -lh or ls -l -h
+
+### ls -lSh 
+listing the files in a directory showing details ordered by size
+in a human readable format
+
+------------------------------------------------
+kavish178@ubuntu:/$ ls -lSh
+total 449M
+-rw-------   1 root root 449M May 21 09:40 swapfile
+drwx------   2 root root  16K May 21 09:40 lost+found
+drwxr-xr-x 129 root root  12K May 21 10:50 etc
+drwxr-xr-x  18 root root 4.1K May 21 22:08 dev
+drwxr-xr-x   4 root root 4.0K May 21 10:47 boot
+drwxrwxr-x   2 root root 4.0K May 21 09:44 cdrom
+drwxr-xr-x   3 root root 4.0K May 21 10:43 home
+drwxr-xr-x   4 root root 4.0K May 21 11:30 media
+drwxr-xr-x   2 root root 4.0K Apr 23 00:32 mnt
+drwxr-xr-x   2 root root 4.0K May 21 10:50 opt
+drwx------   4 root root 4.0K May 21 11:26 root
+drwxr-xr-x  10 root root 4.0K May 21 11:26 snap
+drwxr-xr-x   2 root root 4.0K Apr 23 00:32 srv
+drwxrwxrwt  24 root root 4.0K May 21 22:52 tmp
+drwxr-xr-x  14 root root 4.0K Apr 23 00:34 usr
+drwxr-xr-x  14 root root 4.0K Apr 23 00:42 var
+drwxr-xr-x  31 root root  820 May 21 22:07 run
+lrwxrwxrwx   1 root root   10 May 21 09:41 libx32 -> usr/libx32
+lrwxrwxrwx   1 root root    9 May 21 09:41 lib32 -> usr/lib32
+lrwxrwxrwx   1 root root    9 May 21 09:41 lib64 -> usr/lib64
+lrwxrwxrwx   1 root root    8 May 21 09:41 sbin -> usr/sbin
+lrwxrwxrwx   1 root root    7 May 21 09:41 bin -> usr/bin
+lrwxrwxrwx   1 root root    7 May 21 09:41 lib -> usr/lib
+dr-xr-xr-x 292 root root    0 May 21 22:07 proc
+dr-xr-xr-x  13 root root    0 May 21 22:07 sys
+kavish178@ubuntu:/$ ///////////////
+
+### ls -Slh ls -lSh
+no order probelm
+### ls -a and ls -A
+ls -a will list the files in a directory showing hidden files
+A file is hidden if it is starts with a "."
+----> .. dot file  this is the parent directory
+i have to go upp a level
+cd /
+or  cd  /boot
+or cd ..
+.. dot is a directory that is present in each and every directoyry to use the existing command to get to the parent directoyr
+//// while . is dot  is hsortcut  which is a short cut to current directory nt
+parent directory
+// lthe differnce b/w  ls -A and  ls -a
+-A SHOWS ALL HIDDEN FILES AND NOT . AND .. FILES
+kavish178@ubuntu:/$ ls -a
+.    boot   etc   lib32   lost+found  opt   run   srv       tmp
+..   cdrom  home  lib64   media       proc  sbin  swapfile  usr
+bin  dev    lib   libx32  mnt         root  snap  sys       var
+kavish178@ubuntu:/$ ls -A
+bin    dev   lib    libx32      mnt   root  snap      sys  var
+boot   etc   lib32  lost+found  opt   run   srv       tmp
+cdrom  home  lib64  media       proc  sbin  swapfile  usr
+kavish178@ubuntu:/$ ls
+bin    dev   lib    libx32      mnt   root  snap      sys  var
+boot   etc   lib32  lost+found  opt   run   srv       tmp
+cdrom  home  lib64  media       proc  sbin  swapfile  usr
+kavish178@ubuntu:/$
+
+---> navigating through ls and cd
+--->logical address means
+---->absolute address to the directory u want to go that starts from the very beginning from the root
+scripting soething or kow where u wanna go we use abolute path or abolute address
+
+kavish178@ubuntu:/$ cd home
+kavish178@ubuntu:/home$ pwd
+/home
+kavish178@ubuntu:/home$ ls
+kavish178
+kavish178@ubuntu:/home$ cd kavish178
+kavish178@ubuntu:~$ ls
+Desktop  Documents  Downloads  Music  Pictures  Public  snap  Templates  Videos
+kavish178@ubuntu:~$ cd Documents/
+kavish178@ubuntu:~/Documents$ ls
+kavish178@ubuntu:~/Documents$ pwd
+/home/kavish178/Documents
+kavish178@ubuntu:~/Documents$ cd ..
+kavish178@ubuntu:~$ cd /boot
+kavish178@ubuntu:/boot$ ls
+config-5.4.0-26-generic      memtest86+.bin
+efi                          memtest86+.elf
+grub                         memtest86+_multiboot.bin
+initrd.img                   System.map-5.4.0-26-generic
+initrd.img-5.4.0-26-generic  vmlinuz
+initrd.img.old               vmlinuz-5.4.0-26-generic
+kavish178@ubuntu:/boot$ cd Documents/
+bash: cd: Documents/: No such file or directory
+kavish178@ubuntu:/boot$ cd home/kavish178/Documents
+bash: cd: home/kavish178/Documents: No such file or directory
+kavish178@ubuntu:/boot$ cd home/kavish178/Documents/
+bash: cd: home/kavish178/Documents/: No such file or directory
+kavish178@ubuntu:/boot$ cd /home/kavish178/Documents/
+kavish178@ubuntu:~/Documents$
+///////
+cp and mv commands  copy and move command
+cp<destination path/file name><target path/file name>
+cp copies one or more files to the target folder
+kavish178@ubuntu:~/Documents$
+kavish178@ubuntu:~/Documents$ cd ~
+kavish178@ubuntu:~$ cd /Desktop/
+bash: cd: /Desktop/: No such file or directory
+kavish178@ubuntu:~$ cd /Desktop
+bash: cd: /Desktop: No such file or directory
+kavish178@ubuntu:~$ ls
+Desktop  Documents  Downloads  Music  Pictures  Public  snap  Templates  Videos
+kavish178@ubuntu:~$ cd Desktop
+kavish178@ubuntu:~/Desktop$ ls
+'Linux Commands'
+kavish178@ubuntu:~/Desktop$ ls
+'Linux Commands'  'Linux Commands.txt'
+kavish178@ubuntu:~/Desktop$ cp Li^C
+kavish178@ubuntu:~/Desktop$ cp 'Linux Commands' 'Linx Commands.bkp'
+kavish178@ubuntu:~/Desktop$ ls
+'Linux Commands'  'Linux Commands.txt'  'Linx Commands.bkp'
+kavish178@ubuntu:~/Desktop$ cd ..
+kavish178@ubuntu:~$ ls
+Desktop  Documents  Downloads  Music  Pictures  Public  snap  Templates  Videos
+kavish178@ubuntu:~$ cp ./Linux Commands.txt Documents
+cp: cannot stat './Linux': No such file or directory
+cp: cannot stat 'Commands.txt': No such file or directory
+kavish178@ubuntu:~$ cp ./'Linux Commands'  Documents
+cp: cannot stat './Linux Commands': No such file or directory
+kavish178@ubuntu:~$ cp Desktop/'Linux Commands'  Documents
+kavish178@ubuntu:~$ cd Documents
+kavish178@ubuntu:~/Documents$ ls
+'Linux Commands'
+kavish178@ubuntu:~/Documents$
+/////mv moves file(s) from a  destination to a target folder
+REnaming a moving into the same direcory with other name
+avish178@ubuntu:~/Documents$ cd ..
+kavish178@ubuntu:~$ cd Download/
+bash: cd: Download/: No such file or directory
+kavish178@ubuntu:~$ cd Downloads/
+kavish178@ubuntu:~/Downloads$ ls
+kavish178@ubuntu:~/Downloads$ ls -l
+total 0
+kavish178@ubuntu:~/Downloads$ cd ..
+kavish178@ubuntu:~$ cd Desktop
+kavish178@ubuntu:~/Desktop$ mv 'Linux Commands' /Downloads
+mv: cannot move 'Linux Commands' to '/Downloads': Permission denied
+kavish178@ubuntu:~/Desktop$ cd ..
+kavish178@ubuntu:~$ cp Documents/'Linux Commands' .
+kavish178@ubuntu:~$ ls
+ Desktop     Downloads         Music      Public   Templates
+ Documents  'Linux Commands'   Pictures   snap     Videos
+kavish178@ubuntu:~$ cd Downloads/
+kavish178@ubuntu:~/Downloads$ mv 'Linux Commands' /Downloads
+mv: cannot stat 'Linux Commands': No such file or directory
+kavish178@ubuntu:~/Downloads$ mv 'Linux Commands' Downloads/
+mv: cannot stat 'Linux Commands': No such file or directory
+kavish178@ubuntu:~/Downloads$ ls
+kavish178@ubuntu:~/Downloads$ cd ..
+kavish178@ubuntu:~$ mv 'Linux Commands' Downloads/
+kavish178@ubuntu:~$ cd Downloads/
+kavish178@ubuntu:~/Downloads$ ls
+'Linux Commands'
+kavish178@ubuntu:~/Downloads$ cd ..
+kavish178@ubuntu:~$ ls
+Desktop  Documents  Downloads  Music  Pictures  Public  snap  Templates  Videos
+kavish178@ubuntu:~$ mv 'Linux Commands' 'Linux Commands in Downloads'
+mv: cannot stat 'Linux Commands': No such file or directory
+kavish178@ubuntu:~$ cd Downloads/
+kavish178@ubuntu:~/Downloads$ mv 'Linux Commands' 'Linux Commands in Downloads'
+kavish178@ubuntu:~/Downloads$ ls
+'Linux Commands in Downloads'
+kavish178@ubuntu:~/Downloads$ mv 'Linux Commands in Downloads' ../'Linux Commands'
+kavish178@ubuntu:~/Downloads$ ls
+kavish178@ubuntu:~/Downloads$ pwd
+/home/kavish178/Downloads
+kavish178@ubuntu:~/Downloads$ cd ..
+kavish178@ubuntu:~$ ls
+ Desktop     Downloads         Music      Public   Templates
+ Documents  'Linux Commands'   Pictures   snap     Videos
+
+
+### rm -rf 
+
+which will move  - stands for recursive  and it mean it will go inside the subdirectories and delete it from there as well
+f force means it will ignore non existing files and it will not promt you to
+use it carefully
+kavish178@ubuntu:~/Documents$ cd ..
+kavish178@ubuntu:~$ cd Download/
+bash: cd: Download/: No such file or directory
+kavish178@ubuntu:~$ cd Downloads/
+kavish178@ubuntu:~/Downloads$ ls
+kavish178@ubuntu:~/Downloads$ ls -l
+total 0
+kavish178@ubuntu:~/Downloads$ cd ..
+kavish178@ubuntu:~$ cd Desktop
+kavish178@ubuntu:~/Desktop$ mv 'Linux Commands' /Downloads
+mv: cannot move 'Linux Commands' to '/Downloads': Permission denied
+kavish178@ubuntu:~/Desktop$ cd ..
+kavish178@ubuntu:~$ cp Documents/'Linux Commands' .
+kavish178@ubuntu:~$ ls
+ Desktop     Downloads         Music      Public   Templates
+ Documents  'Linux Commands'   Pictures   snap     Videos
+kavish178@ubuntu:~$ cd Downloads/
+kavish178@ubuntu:~/Downloads$ mv 'Linux Commands' /Downloads
+mv: cannot stat 'Linux Commands': No such file or directory
+kavish178@ubuntu:~/Downloads$ mv 'Linux Commands' Downloads/
+mv: cannot stat 'Linux Commands': No such file or directory
+kavish178@ubuntu:~/Downloads$ ls
+kavish178@ubuntu:~/Downloads$ cd ..
+kavish178@ubuntu:~$ mv 'Linux Commands' Downloads/
+kavish178@ubuntu:~$ cd Downloads/
+kavish178@ubuntu:~/Downloads$ ls
+'Linux Commands'
+kavish178@ubuntu:~/Downloads$ cd ..
+kavish178@ubuntu:~$ ls
+Desktop  Documents  Downloads  Music  Pictures  Public  snap  Templates  Videos
+kavish178@ubuntu:~$ mv 'Linux Commands' 'Linux Commands in Downloads'
+mv: cannot stat 'Linux Commands': No such file or directory
+kavish178@ubuntu:~$ cd Downloads/
+kavish178@ubuntu:~/Downloads$ mv 'Linux Commands' 'Linux Commands in Downloads'
+kavish178@ubuntu:~/Downloads$ ls
+'Linux Commands in Downloads'
+kavish178@ubuntu:~/Downloads$ mv 'Linux Commands in Downloads' ../'Linux Commands'
+kavish178@ubuntu:~/Downloads$ ls
+kavish178@ubuntu:~/Downloads$ pwd
+/home/kavish178/Downloads
+kavish178@ubuntu:~/Downloads$ cd ..
+kavish178@ubuntu:~$ ls
+ Desktop     Downloads         Music      Public   Templates
+ Documents  'Linux Commands'   Pictures   snap     Videos
+kavish178@ubuntu:~$ cd Downloads/
+kavish178@ubuntu:~/Downloads$ ls
+kavish178@ubuntu:~/Downloads$ mv ../'Linux Commands in Downloads' 'Linux Commands in Downloads'
+mv: cannot stat '../Linux Commands in Downloads': No such file or directory
+kavish178@ubuntu:~/Downloads$ mv ../'Linux Commands in Downloads' .
+mv: cannot stat '../Linux Commands in Downloads': No such file or directory
+kavish178@ubuntu:~/Downloads$ cd ..
+kavish178@ubuntu:~$ ls
+ Desktop     Downloads         Music      Public   Templates
+ Documents  'Linux Commands'   Pictures   snap     Videos
+kavish178@ubuntu:~$ mv ../'Linux Commands in Downloads' /Downloads
+mv: cannot stat '../Linux Commands in Downloads': No such file or directory
+kavish178@ubuntu:~$ mv ../'Linux Commands in Downloads' Downloads/
+mv: cannot stat '../Linux Commands in Downloads': No such file or directory
+kavish178@ubuntu:~$ mv 'Linux Commands in Downloads' Downloads/
+mv: cannot stat 'Linux Commands in Downloads': No such file or directory
+kavish178@ubuntu:~$ ls
+ Desktop     Downloads         Music      Public   Templates
+ Documents  'Linux Commands'   Pictures   snap     Videos
+kavish178@ubuntu:~$ mv 'Linux Commands' Downloads/
+kavish178@ubuntu:~$ cd Download/
+bash: cd: Download/: No such file or directory
+kavish178@ubuntu:~$ cd Downloads/
+kavish178@ubuntu:~/Downloads$ ls
+'Linux Commands'
+kavish178@ubuntu:~/Downloads$ cd ..
+kavish178@ubuntu:~$ rm -rf Downloads/
+kavish178@ubuntu:~$ ls
+Desktop  Documents  Music  Pictures  Public  snap  Templates  Videos
+kavish178@ubuntu:~$
+
+### mkdir mkdir creates a new directory
+### rmkdir removes empty directories only
+
+kavish178@ubuntu:~$ ls
+Desktop  Documents  Music  Pictures  Public  snap  Templates  Videos
+kavish178@ubuntu:~$ mkdir New
+kavish178@ubuntu:~$ ls
+Desktop  Documents  Music  New  Pictures  Public  snap  Templates  Videos
+kavish178@ubuntu:~$ cd New
+kavish178@ubuntu:~/New$ ls
+kavish178@ubuntu:~/New$ ls -lh
+total 0
+kavish178@ubuntu:~/New$ cd ..
+kavish178@ubuntu:~$ rmkdir New
+
+Command 'rmkdir' not found, did you mean:
+
+  command 'mmkdir' from deb mblaze (0.6-1)
+  command 'mkdir' from deb coreutils (8.30-3ubuntu2)
+  command 'hmkdir' from deb hfsutils (3.2.6-14)
+  command 'rmdir' from deb coreutils (8.30-3ubuntu2)
+
+Try: sudo apt install <deb name>
+
+kavish178@ubuntu:~$ rmdir New
+kavish178@ubuntu:~$ ls
+Desktop  Documents  Music  Pictures  Public  snap  Templates  Videos
+kavish178@ubuntu:~$ rmdir Documents/
+rmdir: failed to remove 'Documents/': Directory not empty
+kavish178@ubuntu:~$ ^C
+kavish178@ubuntu:~$
+
+### touch is originally used to update a timestamp of a file
+and if name does not exist it ewill create such file
+
+### wildcard (*)
+
+it is extremely used in cli
+kavish178@ubuntu:~$ ls
+Desktop    Music          Pictures  snap       Videos
+Documents  new_data_file  Public    Templates
+kavish178@ubuntu:~$ cd Downloads/
+bash: cd: Downloads/: No such file or directory
+kavish178@ubuntu:~$ mkdir Downloads
+kavish178@ubuntu:~$ ls
+Desktop    Downloads  new_data_file  Public  Templates
+Documents  Music      Pictures       snap    Videos
+kavish178@ubuntu:~$ cd Downloads
+kavish178@ubuntu:~/Downloads$ touch File1.txt
+kavish178@ubuntu:~/Downloads$ ls
+File1.txt
+kavish178@ubuntu:~/Downloads$ touch File2.txt
+kavish178@ubuntu:~/Downloads$ ls
+File1.txt  File2.txt
+kavish178@ubuntu:~/Downloads$ mv * /home/kavish178/Public/
+kavish178@ubuntu:~/Downloads$ cd ..
+kavish178@ubuntu:~$ cd Public/
+kavish178@ubuntu:~/Public$ ls
+File1.txt  File2.txt
+kavish178@ubuntu:~/Public$ ls -lh
+total 0
+-rw-rw-r-- 1 kavish178 kavish178 0 May 21 23:56 File1.txt
+-rw-rw-r-- 1 kavish178 kavish178 0 May 21 23:56 File2.txt
+kavish178@ubuntu:~/Public$ rm *.txt
+kavish178@ubuntu:~/Public$ ls
+kavish178@ubuntu:~/Public$ ls -lh
+total 0
+kavish178@ubuntu:~/Public$ touch File1.txt
+kavish178@ubuntu:~/Public$ TOUCH File2.txt
+TOUCH: command not found
+kavish178@ubuntu:~/Public$ TOUCH File2.txt
+TOUCH: command not found
+kavish178@ubuntu:~/Public$ Touch File2.txt
+
+Command 'Touch' not found, did you mean:
+
+  command 'touch' from deb coreutils (8.30-3ubuntu2)
+
+Try: sudo apt install <deb name>
+
+kavish178@ubuntu:~/Public$ touch File2.txt
+kavish178@ubuntu:~/Public$ ls
+File1.txt  File2.txt
+kavish178@ubuntu:~/Public$ rm File*
+kavish178@ubuntu:~/Public$ ls
+kavish178@ubuntu:~/Public$ ls -lh
+total 0
+kavish178@ubuntu:~/Public$
+cat command to view the content of the file
+cat originally used to cancatenat files together and prints the result and if provides a single fle it will print its content on the screen
+multiple lines of multiple files
+cat single file is concatenatong with content of the first file wth nothing
+
+### less
+
+less is a text viewer  that lets you scrool through text and search for strings within
+kavish178@ubuntu:~/Desktop$ ls -lh
+total 32K
+-rw-rw-r-- 1 kavish178 kavish178  18K May 22 00:03 'Linux Commands'
+-rw-rw-r-- 1 kavish178 kavish178    2 May 21 22:37 'Linux Commands.txt'
+-rw-rw-r-- 1 kavish178 kavish178 8.0K May 21 23:22 'Linx Commands.bkp'
+kavish178@ubuntu:~/Desktop$ cat 'Linux Commands'
+
+### pwd and cd
+pwd prints out the current working directory
+cd is used to change the curretn directory
+kavish178@ubuntu:~$ pwd
+/home/kavish178
+cd for changing location
+going ot the root directory
+kavish178@ubuntu:~$ cd /
+going to the ~ home  directory
+kavish178@ubuntu:/$ cd ~
+kavish178@ubuntu:~$
+ls command which will list the files in a directoy
+kavish178@ubuntu:~$ pwd
+/home/kavish178
+kavish178@ubuntu:~$ cd /
+kavish178@ubuntu:/$ cd ~
+kavish178@ubuntu:~$ cd /
+kavish178@ubuntu:/$ pwd
+/
+kavish178@ubuntu:/$ ls
+bin    dev   lib    libx32      mnt   root  snap      sys  var
+boot   etc   lib32  lost+found  opt   run   srv       tmp
+cdrom  home  lib64  media       proc  sbin  swapfile  usr
+kavish178@ubuntu:/$ ^C
+kavish178@ubuntu:/$
+lot of options we can use with ls commands
+ls -l will list the files in a drirectory showing details
+------------------------
+kavish178@ubuntu:/$ ls -l
+total 459344
+lrwxrwxrwx   1 root root         7 May 21 09:41 bin -> usr/bin
+drwxr-xr-x   4 root root      4096 May 21 10:47 boot
+drwxrwxr-x   2 root root      4096 May 21 09:44 cdrom
+drwxr-xr-x  18 root root      4180 May 21 22:08 dev
+drwxr-xr-x 129 root root     12288 May 21 10:50 etc
+drwxr-xr-x   3 root root      4096 May 21 10:43 home
+lrwxrwxrwx   1 root root         7 May 21 09:41 lib -> usr/lib
+lrwxrwxrwx   1 root root         9 May 21 09:41 lib32 -> usr/lib32
+lrwxrwxrwx   1 root root         9 May 21 09:41 lib64 -> usr/lib64
+lrwxrwxrwx   1 root root        10 May 21 09:41 libx32 -> usr/libx32
+drwx------   2 root root     16384 May 21 09:40 lost+found
+drwxr-xr-x   4 root root      4096 May 21 11:30 media
+drwxr-xr-x   2 root root      4096 Apr 23 00:32 mnt
+drwxr-xr-x   2 root root      4096 May 21 10:50 opt
+dr-xr-xr-x 290 root root         0 May 21 22:07 proc
+drwx------   4 root root      4096 May 21 11:26 root
+drwxr-xr-x  31 root root       820 May 21 22:07 run
+lrwxrwxrwx   1 root root         8 May 21 09:41 sbin -> usr/sbin
+drwxr-xr-x  10 root root      4096 May 21 11:26 snap
+drwxr-xr-x   2 root root      4096 Apr 23 00:32 srv
+-rw-------   1 root root 470287360 May 21 09:40 swapfile
+dr-xr-xr-x  13 root root         0 May 21 22:07 sys
+drwxrwxrwt  23 root root      4096 May 21 22:37 tmp
+drwxr-xr-x  14 root root      4096 Apr 23 00:34 usr
+drwxr-xr-x  14 root root      4096 Apr 23 00:42 var
+kavish178@ubuntu:/$-----------------------
+size written in bytes permission
+last  modified  date
+user into group that own the file and the permissions
+
+### ls -lh
+
+will list the files in a directory   in  human readable format
+kavish178@ubuntu:/$ ls -lh
+total 449M
+lrwxrwxrwx   1 root root    7 May 21 09:41 bin -> usr/bin
+drwxr-xr-x   4 root root 4.0K May 21 10:47 boot
+drwxrwxr-x   2 root root 4.0K May 21 09:44 cdrom
+drwxr-xr-x  18 root root 4.1K May 21 22:08 dev
+drwxr-xr-x 129 root root  12K May 21 10:50 etc
+drwxr-xr-x   3 root root 4.0K May 21 10:43 home
+lrwxrwxrwx   1 root root    7 May 21 09:41 lib -> usr/lib
+lrwxrwxrwx   1 root root    9 May 21 09:41 lib32 -> usr/lib32
+lrwxrwxrwx   1 root root    9 May 21 09:41 lib64 -> usr/lib64
+lrwxrwxrwx   1 root root   10 May 21 09:41 libx32 -> usr/libx32
+drwx------   2 root root  16K May 21 09:40 lost+found
+drwxr-xr-x   4 root root 4.0K May 21 11:30 media
+drwxr-xr-x   2 root root 4.0K Apr 23 00:32 mnt
+drwxr-xr-x   2 root root 4.0K May 21 10:50 opt
+dr-xr-xr-x 291 root root    0 May 21 22:07 proc
+drwx------   4 root root 4.0K May 21 11:26 root
+drwxr-xr-x  31 root root  820 May 21 22:07 run
+lrwxrwxrwx   1 root root    8 May 21 09:41 sbin -> usr/sbin
+drwxr-xr-x  10 root root 4.0K May 21 11:26 snap
+drwxr-xr-x   2 root root 4.0K Apr 23 00:32 srv
+-rw-------   1 root root 449M May 21 09:40 swapfile
+dr-xr-xr-x  13 root root    0 May 21 22:07 sys
+drwxrwxrwt  24 root root 4.0K May 21 22:52 tmp
+drwxr-xr-x  14 root root 4.0K Apr 23 00:34 usr
+drwxr-xr-x  14 root root 4.0K Apr 23 00:42 var
+kavish178@ubuntu:/$
+easy to read format and ls -lh or ls -l -h
+
+### ls -lSh listing the files in a directory showing details ordered by size
+
+in a human readable format
+
+kavish178@ubuntu:/$ ls -lSh
+total 449M
+-rw-------   1 root root 449M May 21 09:40 swapfile
+drwx------   2 root root  16K May 21 09:40 lost+found
+drwxr-xr-x 129 root root  12K May 21 10:50 etc
+drwxr-xr-x  18 root root 4.1K May 21 22:08 dev
+drwxr-xr-x   4 root root 4.0K May 21 10:47 boot
+drwxrwxr-x   2 root root 4.0K May 21 09:44 cdrom
+drwxr-xr-x   3 root root 4.0K May 21 10:43 home
+drwxr-xr-x   4 root root 4.0K May 21 11:30 media
+drwxr-xr-x   2 root root 4.0K Apr 23 00:32 mnt
+drwxr-xr-x   2 root root 4.0K May 21 10:50 opt
+drwx------   4 root root 4.0K May 21 11:26 root
+drwxr-xr-x  10 root root 4.0K May 21 11:26 snap
+drwxr-xr-x   2 root root 4.0K Apr 23 00:32 srv
+drwxrwxrwt  24 root root 4.0K May 21 22:52 tmp
+drwxr-xr-x  14 root root 4.0K Apr 23 00:34 usr
+drwxr-xr-x  14 root root 4.0K Apr 23 00:42 var
+drwxr-xr-x  31 root root  820 May 21 22:07 run
+lrwxrwxrwx   1 root root   10 May 21 09:41 libx32 -> usr/libx32
+lrwxrwxrwx   1 root root    9 May 21 09:41 lib32 -> usr/lib32
+lrwxrwxrwx   1 root root    9 May 21 09:41 lib64 -> usr/lib64
+lrwxrwxrwx   1 root root    8 May 21 09:41 sbin -> usr/sbin
+lrwxrwxrwx   1 root root    7 May 21 09:41 bin -> usr/bin
+lrwxrwxrwx   1 root root    7 May 21 09:41 lib -> usr/lib
+dr-xr-xr-x 292 root root    0 May 21 22:07 proc
+dr-xr-xr-x  13 root root    0 May 21 22:07 sys
+kavish178@ubuntu:/$ ///////////////
+
+###ls -Slh ls -lSh
+
+no order probelm
+
+### ls -a and ls -A
+
+ls -a will list the files in a directory showing hidden files
+A file is hidden if it is starts with a "."
+//////// .. dot file  this is the parent directory
+i have to go upp a level
+cd /
+or  cd  /boot
+or cd ..
+.. dot is a directory that is present in each and every directoyry to use the existing command to get to the parent directoyr
+//// while . is dot  is hsortcut  which is a short cut to current directory nt
+parent directory
+// lthe differnce b/w  ls -A and  ls -a
+-A SHOWS ALL HIDDEN FILES AND NOT . AND .. FILES
+kavish178@ubuntu:/$ ls -a
+.    boot   etc   lib32   lost+found  opt   run   srv       tmp
+..   cdrom  home  lib64   media       proc  sbin  swapfile  usr
+bin  dev    lib   libx32  mnt         root  snap  sys       var
+kavish178@ubuntu:/$ ls -A
+bin    dev   lib    libx32      mnt   root  snap      sys  var
+boot   etc   lib32  lost+found  opt   run   srv       tmp
+cdrom  home  lib64  media       proc  sbin  swapfile  usr
+kavish178@ubuntu:/$ ls
+bin    dev   lib    libx32      mnt   root  snap      sys  var
+boot   etc   lib32  lost+found  opt   run   srv       tmp
+cdrom  home  lib64  media       proc  sbin  swapfile  usr
+kavish178@ubuntu:/$
+////navigating through ls and cd
+/// logical address means
+/// absolute address to the directory u want to go that starts from the very beginning from the root
+scripting soething or kow where u wanna go we use abolute path or abolute address
+kavish178@ubuntu:/$ cd home
+kavish178@ubuntu:/home$ pwd
+/home
+kavish178@ubuntu:/home$ ls
+kavish178
+kavish178@ubuntu:/home$ cd kavish178
+kavish178@ubuntu:~$ ls
+Desktop  Documents  Downloads  Music  Pictures  Public  snap  Templates  Videos
+kavish178@ubuntu:~$ cd Documents/
+kavish178@ubuntu:~/Documents$ ls
+kavish178@ubuntu:~/Documents$ pwd
+/home/kavish178/Documents
+kavish178@ubuntu:~/Documents$ cd ..
+kavish178@ubuntu:~$ cd /boot
+kavish178@ubuntu:/boot$ ls
+config-5.4.0-26-generic      memtest86+.bin
+efi                          memtest86+.elf
+grub                         memtest86+_multiboot.bin
+initrd.img                   System.map-5.4.0-26-generic
+initrd.img-5.4.0-26-generic  vmlinuz
+initrd.img.old               vmlinuz-5.4.0-26-generic
+kavish178@ubuntu:/boot$ cd Documents/
+bash: cd: Documents/: No such file or directory
+kavish178@ubuntu:/boot$ cd home/kavish178/Documents
+bash: cd: home/kavish178/Documents: No such file or directory
+kavish178@ubuntu:/boot$ cd home/kavish178/Documents/
+bash: cd: home/kavish178/Documents/: No such file or directory
+kavish178@ubuntu:/boot$ cd /home/kavish178/Documents/
+kavish178@ubuntu:~/Documents$
+///////
+cp and mv commands  copy and move command
+cp<destination path/file name><target path/file name>
+cp copies one or more files to the target folder
+kavish178@ubuntu:~/Documents$
+kavish178@ubuntu:~/Documents$ cd ~
+kavish178@ubuntu:~$ cd /Desktop/
+bash: cd: /Desktop/: No such file or directory
+kavish178@ubuntu:~$ cd /Desktop
+bash: cd: /Desktop: No such file or directory
+kavish178@ubuntu:~$ ls
+Desktop  Documents  Downloads  Music  Pictures  Public  snap  Templates  Videos
+kavish178@ubuntu:~$ cd Desktop
+kavish178@ubuntu:~/Desktop$ ls
+'Linux Commands'
+kavish178@ubuntu:~/Desktop$ ls
+'Linux Commands'  'Linux Commands.txt'
+kavish178@ubuntu:~/Desktop$ cp Li^C
+kavish178@ubuntu:~/Desktop$ cp 'Linux Commands' 'Linx Commands.bkp'
+kavish178@ubuntu:~/Desktop$ ls
+'Linux Commands'  'Linux Commands.txt'  'Linx Commands.bkp'
+kavish178@ubuntu:~/Desktop$ cd ..
+kavish178@ubuntu:~$ ls
+Desktop  Documents  Downloads  Music  Pictures  Public  snap  Templates  Videos
+kavish178@ubuntu:~$ cp ./Linux Commands.txt Documents
+cp: cannot stat './Linux': No such file or directory
+cp: cannot stat 'Commands.txt': No such file or directory
+kavish178@ubuntu:~$ cp ./'Linux Commands'  Documents
+cp: cannot stat './Linux Commands': No such file or directory
+kavish178@ubuntu:~$ cp Desktop/'Linux Commands'  Documents
+kavish178@ubuntu:~$ cd Documents
+kavish178@ubuntu:~/Documents$ ls
+'Linux Commands'
+kavish178@ubuntu:~/Documents$
+/////mv moves file(s) from a  destination to a target folder
+REnaming a moving into the same direcory with other name
+avish178@ubuntu:~/Documents$ cd ..
+kavish178@ubuntu:~$ cd Download/
+bash: cd: Download/: No such file or directory
+kavish178@ubuntu:~$ cd Downloads/
+kavish178@ubuntu:~/Downloads$ ls
+kavish178@ubuntu:~/Downloads$ ls -l
+total 0
+kavish178@ubuntu:~/Downloads$ cd ..
+kavish178@ubuntu:~$ cd Desktop
+kavish178@ubuntu:~/Desktop$ mv 'Linux Commands' /Downloads
+mv: cannot move 'Linux Commands' to '/Downloads': Permission denied
+kavish178@ubuntu:~/Desktop$ cd ..
+kavish178@ubuntu:~$ cp Documents/'Linux Commands' .
+kavish178@ubuntu:~$ ls
+ Desktop     Downloads         Music      Public   Templates
+ Documents  'Linux Commands'   Pictures   snap     Videos
+kavish178@ubuntu:~$ cd Downloads/
+kavish178@ubuntu:~/Downloads$ mv 'Linux Commands' /Downloads
+mv: cannot stat 'Linux Commands': No such file or directory
+kavish178@ubuntu:~/Downloads$ mv 'Linux Commands' Downloads/
+mv: cannot stat 'Linux Commands': No such file or directory
+kavish178@ubuntu:~/Downloads$ ls
+kavish178@ubuntu:~/Downloads$ cd ..
+kavish178@ubuntu:~$ mv 'Linux Commands' Downloads/
+kavish178@ubuntu:~$ cd Downloads/
+kavish178@ubuntu:~/Downloads$ ls
+'Linux Commands'
+kavish178@ubuntu:~/Downloads$ cd ..
+kavish178@ubuntu:~$ ls
+Desktop  Documents  Downloads  Music  Pictures  Public  snap  Templates  Videos
+kavish178@ubuntu:~$ mv 'Linux Commands' 'Linux Commands in Downloads'
+mv: cannot stat 'Linux Commands': No such file or directory
+kavish178@ubuntu:~$ cd Downloads/
+kavish178@ubuntu:~/Downloads$ mv 'Linux Commands' 'Linux Commands in Downloads'
+kavish178@ubuntu:~/Downloads$ ls
+'Linux Commands in Downloads'
+kavish178@ubuntu:~/Downloads$ mv 'Linux Commands in Downloads' ../'Linux Commands'
+kavish178@ubuntu:~/Downloads$ ls
+kavish178@ubuntu:~/Downloads$ pwd
+/home/kavish178/Downloads
+kavish178@ubuntu:~/Downloads$ cd ..
+kavish178@ubuntu:~$ ls
+ Desktop     Downloads         Music      Public   Templates
+ Documents  'Linux Commands'   Pictures   snap     Videos
+kavish178@ubuntu:~$
+////
+
+### rm -rf which will move  - stands for recursive  and it mean it will go inside the subdirectories and delete it from there as well
+f force means it will ignore non existing files and it will not promt you to
+use it carefully
+kavish178@ubuntu:~/Documents$ cd ..
+kavish178@ubuntu:~$ cd Download/
+bash: cd: Download/: No such file or directory
+kavish178@ubuntu:~$ cd Downloads/
+kavish178@ubuntu:~/Downloads$ ls
+kavish178@ubuntu:~/Downloads$ ls -l
+total 0
+kavish178@ubuntu:~/Downloads$ cd ..
+kavish178@ubuntu:~$ cd Desktop
+kavish178@ubuntu:~/Desktop$ mv 'Linux Commands' /Downloads
+mv: cannot move 'Linux Commands' to '/Downloads': Permission denied
+kavish178@ubuntu:~/Desktop$ cd ..
+kavish178@ubuntu:~$ cp Documents/'Linux Commands' .
+kavish178@ubuntu:~$ ls
+ Desktop     Downloads         Music      Public   Templates
+ Documents  'Linux Commands'   Pictures   snap     Videos
+kavish178@ubuntu:~$ cd Downloads/
+kavish178@ubuntu:~/Downloads$ mv 'Linux Commands' /Downloads
+mv: cannot stat 'Linux Commands': No such file or directory
+kavish178@ubuntu:~/Downloads$ mv 'Linux Commands' Downloads/
+mv: cannot stat 'Linux Commands': No such file or directory
+kavish178@ubuntu:~/Downloads$ ls
+kavish178@ubuntu:~/Downloads$ cd ..
+kavish178@ubuntu:~$ mv 'Linux Commands' Downloads/
+kavish178@ubuntu:~$ cd Downloads/
+kavish178@ubuntu:~/Downloads$ ls
+'Linux Commands'
+kavish178@ubuntu:~/Downloads$ cd ..
+kavish178@ubuntu:~$ ls
+Desktop  Documents  Downloads  Music  Pictures  Public  snap  Templates  Videos
+kavish178@ubuntu:~$ mv 'Linux Commands' 'Linux Commands in Downloads'
+mv: cannot stat 'Linux Commands': No such file or directory
+kavish178@ubuntu:~$ cd Downloads/
+kavish178@ubuntu:~/Downloads$ mv 'Linux Commands' 'Linux Commands in Downloads'
+kavish178@ubuntu:~/Downloads$ ls
+'Linux Commands in Downloads'
+kavish178@ubuntu:~/Downloads$ mv 'Linux Commands in Downloads' ../'Linux Commands'
+kavish178@ubuntu:~/Downloads$ ls
+kavish178@ubuntu:~/Downloads$ pwd
+/home/kavish178/Downloads
+kavish178@ubuntu:~/Downloads$ cd ..
+kavish178@ubuntu:~$ ls
+ Desktop     Downloads         Music      Public   Templates
+ Documents  'Linux Commands'   Pictures   snap     Videos
+kavish178@ubuntu:~$ cd Downloads/
+kavish178@ubuntu:~/Downloads$ ls
+kavish178@ubuntu:~/Downloads$ mv ../'Linux Commands in Downloads' 'Linux Commands in Downloads'
+mv: cannot stat '../Linux Commands in Downloads': No such file or directory
+kavish178@ubuntu:~/Downloads$ mv ../'Linux Commands in Downloads' .
+mv: cannot stat '../Linux Commands in Downloads': No such file or directory
+kavish178@ubuntu:~/Downloads$ cd ..
+kavish178@ubuntu:~$ ls
+ Desktop     Downloads         Music      Public   Templates
+ Documents  'Linux Commands'   Pictures   snap     Videos
+kavish178@ubuntu:~$ mv ../'Linux Commands in Downloads' /Downloads
+mv: cannot stat '../Linux Commands in Downloads': No such file or directory
+kavish178@ubuntu:~$ mv ../'Linux Commands in Downloads' Downloads/
+mv: cannot stat '../Linux Commands in Downloads': No such file or directory
+kavish178@ubuntu:~$ mv 'Linux Commands in Downloads' Downloads/
+mv: cannot stat 'Linux Commands in Downloads': No such file or directory
+kavish178@ubuntu:~$ ls
+ Desktop     Downloads         Music      Public   Templates
+ Documents  'Linux Commands'   Pictures   snap     Videos
+kavish178@ubuntu:~$ mv 'Linux Commands' Downloads/
+kavish178@ubuntu:~$ cd Download/
+bash: cd: Download/: No such file or directory
+kavish178@ubuntu:~$ cd Downloads/
+kavish178@ubuntu:~/Downloads$ ls
+'Linux Commands'
+kavish178@ubuntu:~/Downloads$ cd ..
+kavish178@ubuntu:~$ rm -rf Downloads/
+kavish178@ubuntu:~$ ls
+Desktop  Documents  Music  Pictures  Public  snap  Templates  Videos
+kavish178@ubuntu:~$
+
+### mkdir mkdir creates a new directory
+### rmkdir removes empty directories only
+
+kavish178@ubuntu:~$ ls
+Desktop  Documents  Music  Pictures  Public  snap  Templates  Videos
+kavish178@ubuntu:~$ mkdir New
+kavish178@ubuntu:~$ ls
+Desktop  Documents  Music  New  Pictures  Public  snap  Templates  Videos
+kavish178@ubuntu:~$ cd New
+kavish178@ubuntu:~/New$ ls
+kavish178@ubuntu:~/New$ ls -lh
+total 0
+kavish178@ubuntu:~/New$ cd ..
+kavish178@ubuntu:~$ rmkdir New
+
+Command 'rmkdir' not found, did you mean:
+
+  command 'mmkdir' from deb mblaze (0.6-1)
+  command 'mkdir' from deb coreutils (8.30-3ubuntu2)
+  command 'hmkdir' from deb hfsutils (3.2.6-14)
+  command 'rmdir' from deb coreutils (8.30-3ubuntu2)
+
+Try: sudo apt install <deb name>
+
+kavish178@ubuntu:~$ rmdir New
+kavish178@ubuntu:~$ ls
+Desktop  Documents  Music  Pictures  Public  snap  Templates  Videos
+kavish178@ubuntu:~$ rmdir Documents/
+rmdir: failed to remove 'Documents/': Directory not empty
+kavish178@ubuntu:~$ ^C
+kavish178@ubuntu:~$
+
+### touch is originally used to update a timestamp of a file
+
+and if name does not exist it ewill create such file
+/////wildcard (*)
+it is ecxtremely used in cli
+kavish178@ubuntu:~$ ls
+Desktop    Music          Pictures  snap       Videos
+Documents  new_data_file  Public    Templates
+kavish178@ubuntu:~$ cd Downloads/
+bash: cd: Downloads/: No such file or directory
+kavish178@ubuntu:~$ mkdir Downloads
+kavish178@ubuntu:~$ ls
+Desktop    Downloads  new_data_file  Public  Templates
+Documents  Music      Pictures       snap    Videos
+kavish178@ubuntu:~$ cd Downloads
+kavish178@ubuntu:~/Downloads$ touch File1.txt
+kavish178@ubuntu:~/Downloads$ ls
+File1.txt
+kavish178@ubuntu:~/Downloads$ touch File2.txt
+kavish178@ubuntu:~/Downloads$ ls
+File1.txt  File2.txt
+kavish178@ubuntu:~/Downloads$ mv * /home/kavish178/Public/
+kavish178@ubuntu:~/Downloads$ cd ..
+kavish178@ubuntu:~$ cd Public/
+kavish178@ubuntu:~/Public$ ls
+File1.txt  File2.txt
+kavish178@ubuntu:~/Public$ ls -lh
+total 0
+-rw-rw-r-- 1 kavish178 kavish178 0 May 21 23:56 File1.txt
+-rw-rw-r-- 1 kavish178 kavish178 0 May 21 23:56 File2.txt
+kavish178@ubuntu:~/Public$ rm *.txt
+kavish178@ubuntu:~/Public$ ls
+kavish178@ubuntu:~/Public$ ls -lh
+total 0
+kavish178@ubuntu:~/Public$ touch File1.txt
+kavish178@ubuntu:~/Public$ TOUCH File2.txt
+TOUCH: command not found
+kavish178@ubuntu:~/Public$ TOUCH File2.txt
+TOUCH: command not found
+kavish178@ubuntu:~/Public$ Touch File2.txt
+
+Command 'Touch' not found, did you mean:
+
+  command 'touch' from deb coreutils (8.30-3ubuntu2)
+
+Try: sudo apt install <deb name>
+
+kavish178@ubuntu:~/Public$ touch File2.txt
+kavish178@ubuntu:~/Public$ ls
+File1.txt  File2.txt
+kavish178@ubuntu:~/Public$ rm File*
+kavish178@ubuntu:~/Public$ ls
+kavish178@ubuntu:~/Public$ ls -lh
+total 0
+kavish178@ubuntu:~/Public$
+cat command
+cat originally used to cancatenat files together and prints the result and if provides a single fle it will print its content on the screen
+
+
+kavish178@ubuntu:~/Desktop$ less  Touch
+Touch: No such file or directory
+kavish178@ubuntu:~/Desktop$ less american-englis
+american-englis: No such file or directory
+kavish178@ubuntu:~/Desktop$ less american-english
+american-english: No such file or directory
+kavish178@ubuntu:~/Desktop$ less 'Linux Commands'
+to find a particular text /(occurences of the word)
+//////grep it is used to filter out text from files or from other outputs
+ kavish178@ubuntu:~/Desktop$ cd ..
+kavish178@ubuntu:~$ cd Downloads/
+kavish178@ubuntu:~/Downloads$ ls
+kavish178@ubuntu:~/Downloads$ touch data
+kavish178@ubuntu:~/Downloads$ ls
+data
+kavish178@ubuntu:~/Downloads$ cat data
+grep lets you to search through a text for a specific string
+this is a line
+this is another line
+this is the last line
+kavish178@ubuntu:~/Downloads$ grep data
+last
+;
+^C
+kavish178@ubuntu:~/Downloads$ grep "last" data
+this is the last line
+kavish178@ubuntu:~/Downloads$ grep -i "last" data
+this is the last line
+kavish178@ubuntu:~/Downloads$ cat data
+grep lets you to search through a text for a specific string
+this is a line
+this is another line
+this is the last line
+This is the last line
+This
+kavish178@ubuntu:~/Downloads$ grep -i "This" data
+this is a line
+this is another line
+this is the last line
+This is the last line
+This
+kavish178@ubuntu:~/Downloads$ grep  "This" data
+This is the last line
+This
+kavish178@ubuntu:~/Downloads$ grep -v "This" data
+grep lets you to search through a text for a specific string
+this is a line
+this is another line
+this is the last line
+kavish178@ubuntu:~/Downloads$ grep -v -i "This" data
+grep lets you to search through a text for a specific string
+kavish178@ubuntu:~/Downloads$ grep o "This" data
+grep: This: No such file or directory
+data:grep lets you to search through a text for a specific string
+data:this is another line
+kavish178@ubuntu:~/Downloads$ grep -o "This" data
+This
+This
+kavish178@ubuntu:~/Downloads$ grep -ci "This" data
+5
+kavish178@ubuntu:~/Downloads$ grep -i "This" data
+this is a line
+this is another line
+this is the last line
+This is the last line
+This
+kavish178@ubuntu:~/Downloads$
+
+### output redirection  
+
+normally the output of a command is printed output ot the screen but we change that with the redirecotions operators.
+The "|"  is used to redirect the output from one command to the input of another. this is called "Piping"
+ls |  grep "file1.txt"
+ the ">"  is used to dump the output of a command into a file,overwriting what was in the file
+ ls > file2.txt
+ the ">>"  is used to append the output  of a command into a file
+ ls >> file3.txt
+////if config
+kavish178@ubuntu:~/Downloads$ ifconfig
+
+Command 'ifconfig' not found, but can be installed with:
+
+sudo apt install net-tools
+
+kavish178@ubuntu:~/Downloads$ cd ..
+kavish178@ubuntu:~$ ifconfig
+
+Command 'ifconfig' not found, but can be installed with:
+
+sudo apt install net-tools
+
+### kavish178@ubuntu:~$ sudo apt install net-tools
+
+[sudo] password for kavish178:
+Reading package lists... Done
+Building dependency tree      
+Reading state information... Done
+The following NEW packages will be installed:
+  net-tools
+0 upgraded, 1 newly installed, 0 to remove and 130 not upgraded.
+Need to get 196 kB of archives.
+After this operation, 864 kB of additional disk space will be used.
+Get:1 http://us.archive.ubuntu.com/ubuntu focal/main amd64 net-tools amd64 1.60+git20180626.aebd88e-1ubuntu1 [196 kB]
+Get:1 http://us.archive.ubuntu.com/ubuntu focal/main amd64 net-tools amd64 1.60+git20180626.aebd88e-1ubuntu1 [196 kB]
+Get:1 http://us.archive.ubuntu.com/ubuntu focal/main amd64 net-tools amd64 1.60+git20180626.aebd88e-1ubuntu1 [196 kB]
+Get:1 http://us.archive.ubuntu.com/ubuntu focal/main amd64 net-tools amd64 1.60+git20180626.aebd88e-1ubuntu1 [196 kB]
+Get:1 http://us.archive.ubuntu.com/ubuntu focal/main amd64 net-tools amd64 1.60+git20180626.aebd88e-1ubuntu1 [196 kB]
+Get:1 http://us.archive.ubuntu.com/ubuntu focal/main amd64 net-tools amd64 1.60+git20180626.aebd88e-1ubuntu1 [196 kB]
+Get:1 http://us.archive.ubuntu.com/ubuntu focal/main amd64 net-tools amd64 1.60+git20180626.aebd88e-1ubuntu1 [196 kB]
+Get:1 http://us.archive.ubuntu.com/ubuntu focal/main amd64 net-tools amd64 1.60+git20180626.aebd88e-1ubuntu1 [196 kB]
+Get:1 http://us.archive.ubuntu.com/ubuntu focal/main amd64 net-tools amd64 1.60+git20180626.aebd88e-1ubuntu1 [196 kB]
+Get:1 http://us.archive.ubuntu.com/ubuntu focal/main amd64 net-tools amd64 1.60+git20180626.aebd88e-1ubuntu1 [196 kB]
+Get:1 http://us.archive.ubuntu.com/ubuntu focal/main amd64 net-tools amd64 1.60+git20180626.aebd88e-1ubuntu1 [196 kB]
+Get:1 http://us.archive.ubuntu.com/ubuntu focal/main amd64 net-tools amd64 1.60+git20180626.aebd88e-1ubuntu1 [196 kB]
+Get:1 http://us.archive.ubuntu.com/ubuntu focal/main amd64 net-tools amd64 1.60+git20180626.aebd88e-1ubuntu1 [196 kB]
+Get:1 http://us.archive.ubuntu.com/ubuntu focal/main amd64 net-tools amd64 1.60+git20180626.aebd88e-1ubuntu1 [196 kB]
+Get:1 http://us.archive.ubuntu.com/ubuntu focal/main amd64 net-tools amd64 1.60+git20180626.aebd88e-1ubuntu1 [196 kB]
+Fetched 6,080 B in 7min 14s (14 B/s)
+Selecting previously unselected package net-tools.
+(Reading database ... 142460 files and directories currently installed.)
+Preparing to unpack .../net-tools_1.60+git20180626.aebd88e-1ubuntu1_amd64.deb
+...
+Unpacking net-tools (1.60+git20180626.aebd88e-1ubuntu1) ...
+Setting up net-tools (1.60+git20180626.aebd88e-1ubuntu1) ...
+Processing triggers for man-db (2.9.1-1) ...
+kavish178@ubuntu:~$ ifconfig
+ens33: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.168.50.128  netmask 255.255.255.0  broadcast 192.168.50.255
+        inet6 fe80::6b1a:6a43:4f67:2882  prefixlen 64  scopeid 0x20<link>
+        ether 00:0c:29:ca:e0:28  txqueuelen 1000  (Ethernet)
+        RX packets 75257  bytes 95907192 (95.9 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 16666  bytes 2400026 (2.4 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 2893  bytes 264034 (264.0 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 2893  bytes 264034 (264.0 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+//// >> and > and echo commands on cli
+avish178@ubuntu:~$ ifconfig | grep -i "loopback"
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        loop  txqueuelen 1000  (Local Loopback)
+kavish178@ubuntu:~$ ifconfig | grep -i "loopback"
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        loop  txqueuelen 1000  (Local Loopback)
+kavish178@ubuntu:~$ echo "my name is KaVish"
+my name is KaVish
+kavish178@ubuntu:~$ cd Downloads/
+kavish178@ubuntu:~/Downloads$ ls
+data
+kavish178@ubuntu:~/Downloads$ echo "my name is KaVish" > data
+kavish178@ubuntu:~/Downloads$ cat data
+my name is KaVish
+kavish178@ubuntu:~/Downloads$ echo "my name is KaVish" > new_file
+kavish178@ubuntu:~/Downloads$ ls
+data  new_file
+kavish178@ubuntu:~/Downloads$ cat new_file
+my name is KaVish
+kavish178@ubuntu:~/Downloads$ echo "my name is Pandit" > new_file
+kavish178@ubuntu:~/Downloads$ cat new_file
+my name is Pandit
+kavish178@ubuntu:~/Downloads$ echo "my name is Kavish" >> new_file
+kavish178@ubuntu:~/Downloads$ cat new_file
+my name is Pandit
+my name is Kavish
+kavish178@ubuntu:~/Downloads$ ifconfig > ifconfig_output
+kavish178@ubuntu:~/Downloads$ ls
+data  ifconfig_output  new_file
+kavish178@ubuntu:~/Downloads$ cat ifconfig_output
+ens33: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.168.50.128  netmask 255.255.255.0  broadcast 192.168.50.255
+        inet6 fe80::6b1a:6a43:4f67:2882  prefixlen 64  scopeid 0x20<link>
+        ether 00:0c:29:ca:e0:28  txqueuelen 1000  (Ethernet)
+        RX packets 75484  bytes 95949752 (95.9 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 16821  bytes 2422622 (2.4 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 2940  bytes 267939 (267.9 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 2940  bytes 267939 (267.9 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+kavish178@ubuntu:~/Downloads$
+
+### find commands
+
+kavish178@ubuntu:~/Downloads$ ls
+data  ifconfig_output  new_file
+kavish178@ubuntu:~/Downloads$ find . -name "*.txt"
+kavish178@ubuntu:~/Downloads$ cd ..
+kavish178@ubuntu:~$ cd Desktop/
+kavish178@ubuntu:~/Desktop$ find . -this "*.txt"
+find: unknown predicate `-this'
+kavish178@ubuntu:~/Desktop$ find . -last  "*.txt"
+find: unknown predicate `-last'
+kavish178@ubuntu:~/Desktop$ find /home  -last  "*.txt"
+find: unknown predicate `-last'
+kavish178@ubuntu:~/Desktop$ find /home  -name  "*.txt"
+/home/kavish178/.mozilla/firefox/85i0cnqv.default-release/SiteSecurityServiceState.txt
+/home/kavish178/.mozilla/firefox/85i0cnqv.default-release/TRRBlacklist.txt
+/home/kavish178/.mozilla/firefox/85i0cnqv.default-release/pkcs11.txt
+/home/kavish178/.mozilla/firefox/85i0cnqv.default-release/SecurityPreloadState.txt
+/home/kavish178/.mozilla/firefox/85i0cnqv.default-release/serviceworker.txt
+/home/kavish178/.mozilla/firefox/85i0cnqv.default-release/AlternateServices.txt
+/home/kavish178/.thunderbird/jckyxppb.default-release/SiteSecurityServiceState.txt
+/home/kavish178/.thunderbird/jckyxppb.default-release/pkcs11.txt
+/home/kavish178/.thunderbird/jckyxppb.default-release/Telemetry.ShutdownTime.txt
+/home/kavish178/.thunderbird/jckyxppb.default-release/SecurityPreloadState.txt
+/home/kavish178/.thunderbird/jckyxppb.default-release/AlternateServices.txt
+/home/kavish178/Desktop/Linux Commands.txt
+/home/kavish178/.cache/tracker/first-index.txt
+/home/kavish178/.cache/tracker/parser-version.txt
+/home/kavish178/.cache/tracker/last-crawl.txt
+/home/kavish178/.cache/tracker/db-locale.txt
+/home/kavish178/.cache/tracker/db-version.txt
+kavish178@ubuntu:~/Desktop$ find /boot/  -size  +10M
+/boot/vmlinuz-5.4.0-26-generic
+/boot/initrd.img-5.4.0-26-generic
+find: ‘/boot/efi’: Permission denied
+kavish178@ubuntu:~/Desktop$ sudo find /boot/  -size  +10M
+[sudo] password for kavish178:
+/boot/vmlinuz-5.4.0-26-generic
+/boot/initrd.img-5.4.0-26-generic
+kavish178@ubuntu:~/Desktop$ sudo find /boot/  -size  +10M
+/boot/vmlinuz-5.4.0-26-generic
+/boot/initrd.img-5.4.0-26-generic
+kavish178@ubuntu:~/Desktop$ ls -lg^C
+kavish178@ubuntu:~/Desktop$  /////
+
+### du reports the size of directory trees and inclusives of all their contents and the sizes of indviduals files
+### du commands
+
+kavish178@ubuntu:~/Desktop$ cd .
+kavish178@ubuntu:~/Desktop$ cd ..
+kavish178@ubuntu:~$ ls -lh
+total 36K
+drwxr-xr-x 2 kavish178 kavish178 4.0K May 22 00:03 Desktop
+drwxr-xr-x 2 kavish178 kavish178 4.0K May 21 23:25 Documents
+drwxrwxr-x 2 kavish178 kavish178 4.0K May 22 01:22 Downloads
+drwxr-xr-x 2 kavish178 kavish178 4.0K May 21 11:11 Music
+-rw-rw-r-- 1 kavish178 kavish178    0 May 21 23:44 new_data_file
+drwxr-xr-x 2 kavish178 kavish178 4.0K May 21 11:11 Pictures
+drwxr-xr-x 2 kavish178 kavish178 4.0K May 21 23:59 Public
+drwxr-xr-x 4 kavish178 kavish178 4.0K May 21 11:26 snap
+drwxr-xr-x 2 kavish178 kavish178 4.0K May 21 11:11 Templates
+drwxr-xr-x 2 kavish178 kavish178 4.0K May 21 11:11 Videos
+kavish178@ubuntu:~$ du -s
+99856 .
+kavish178@ubuntu:~$ du -sh
+98M .
+kavish178@ubuntu:~$ du -h *
+36K Desktop
+12K Documents
+16K Downloads
+4.0K Music
+0 new_data_file
+4.0K Pictures
+4.0K Public
+4.0K snap/canonical-livepatch/95
+4.0K snap/canonical-livepatch/common
+12K snap/canonical-livepatch
+60K snap/snap-store/common/.cache/fontconfig
+24K snap/snap-store/common/.cache/gio-modules
+796K snap/snap-store/common/.cache/gnome-software/odrs
+48K snap/snap-store/common/.cache/gnome-software/screenshots/112x63
+116K snap/snap-store/common/.cache/gnome-software/screenshots/752x423
+364K snap/snap-store/common/.cache/gnome-software/screenshots/624x351
+532K snap/snap-store/common/.cache/gnome-software/screenshots
+16K snap/snap-store/common/.cache/gnome-software/icons
+352K snap/snap-store/common/.cache/gnome-software/fwupd/remotes.d/lvfs
+356K snap/snap-store/common/.cache/gnome-software/fwupd/remotes.d
+360K snap/snap-store/common/.cache/gnome-software/fwupd
+3.9M snap/snap-store/common/.cache/gnome-software/appstream
+5.6M snap/snap-store/common/.cache/gnome-software
+68K snap/snap-store/common/.cache/immodules
+5.7M snap/snap-store/common/.cache
+5.7M snap/snap-store/common
+188K snap/snap-store/433/.local/share/glib-2.0/schemas
+192K snap/snap-store/433/.local/share/glib-2.0
+8.0K snap/snap-store/433/.local/share/icons/hicolor
+84K snap/snap-store/433/.local/share/icons/ubuntu-mono-dark
+8.0K snap/snap-store/433/.local/share/icons/LoginIcons
+44K snap/snap-store/433/.local/share/icons/Humanity-Dark
+324K snap/snap-store/433/.local/share/icons/Humanity
+44K snap/snap-store/433/.local/share/icons/Adwaita
+92K snap/snap-store/433/.local/share/icons/ubuntu-mono-light
+608K snap/snap-store/433/.local/share/icons
+804K snap/snap-store/433/.local/share
+808K snap/snap-store/433/.local
+8.0K snap/snap-store/433/.config/fontconfig
+4.0K snap/snap-store/433/.config/gtk-2.0
+4.0K snap/snap-store/433/.config/dconf
+4.0K snap/snap-store/433/.config/ibus
+4.0K snap/snap-store/433/.config/gtk-3.0
+44K snap/snap-store/433/.config
+860K snap/snap-store/433
+188K snap/snap-store/454/.local/share/glib-2.0/schemas
+192K snap/snap-store/454/.local/share/glib-2.0
+8.0K snap/snap-store/454/.local/share/icons/hicolor
+84K snap/snap-store/454/.local/share/icons/ubuntu-mono-dark
+8.0K snap/snap-store/454/.local/share/icons/LoginIcons
+44K snap/snap-store/454/.local/share/icons/Humanity-Dark
+324K snap/snap-store/454/.local/share/icons/Humanity
+44K snap/snap-store/454/.local/share/icons/Adwaita
+92K snap/snap-store/454/.local/share/icons/ubuntu-mono-light
+608K snap/snap-store/454/.local/share/icons
+804K snap/snap-store/454/.local/share
+808K snap/snap-store/454/.local
+8.0K snap/snap-store/454/.config/fontconfig
+4.0K snap/snap-store/454/.config/gtk-2.0
+4.0K snap/snap-store/454/.config/dconf
+4.0K snap/snap-store/454/.config/ibus
+4.0K snap/snap-store/454/.config/gtk-3.0
+44K snap/snap-store/454/.config
+860K snap/snap-store/454
+7.4M snap/snap-store
+7.4M snap
+4.0K Templates
+4.0K Videos
+4kb is the least amout of memry than can be allocated
+du shows the real size
+
+### symbolic links and hard links
+
+### shortcut will be needing absolute path as it can be accessed from anywhere
+
+//kavish178@ubuntu:~$ cd Downloads/
+kavish178@ubuntu:~/Downloads$ ls
+data  ifconfig_output  new_file
+kavish178@ubuntu:~/Downloads$ ln -s /home/kavish178/Downloads/data shortcut
+kavish178@ubuntu:~/Downloads$ ls -lh
+total 12K
+-rw-rw-r-- 1 kavish178 kavish178  18 May 22 01:20 data
+-rw-rw-r-- 1 kavish178 kavish178 898 May 22 01:22 ifconfig_output
+-rw-rw-r-- 1 kavish178 kavish178  36 May 22 01:21 new_file
+lrwxrwxrwx 1 kavish178 kavish178  30 May 22 01:39 shortcut -> /home/kavish178/Downloads/data
+kavish178@ubuntu:~/Downloads$ cat data
+my name is KaVish
+kavish178@ubuntu:~/Downloads$ cat shotcut
+cat: shotcut: No such file or directory
+kavish178@ubuntu:~/Downloads$ cat shortcut
+my name is KaVish
+kavish178@ubuntu:~/Downloads$ cd ..
+kavish178@ubuntu:~$ cd Downloads/
+kavish178@ubuntu:~/Downloads$ mc shortcut ..
+
+Command 'mc' not found, but can be installed with:
+
+sudo apt install mc
+
+kavish178@ubuntu:~/Downloads$ mv shortcut ..
+kavish178@ubuntu:~/Downloads$ cd ..
+kavish178@ubuntu:~$ ls
+Desktop    Downloads  new_data_file  Public    snap       Videos
+Documents  Music      Pictures       shortcut  Templates
+kavish178@ubuntu:~$ cat shortcut
+my name is KaVish
+kavish178@ubuntu:~$ echo "Hello my name is above written" >> shortcut
+kavish178@ubuntu:~$ cd Downloads/
+kavish178@ubuntu:~/Downloads$ cat data
+my name is KaVish
+Hello my name is above written
+kavish178@ubuntu:~/Downloads$
+
+### error if not provided absolute address
+
+kavish178@ubuntu:~$ cd Downloads/
+kavish178@ubuntu:~/Downloads$ ls
+data  ifconfig_output  new_file
+kavish178@ubuntu:~/Downloads$ ln -s /home/kavish178/Downloads/data shortcut
+kavish178@ubuntu:~/Downloads$ ls -lh
+total 12K
+-rw-rw-r-- 1 kavish178 kavish178  18 May 22 01:20 data
+-rw-rw-r-- 1 kavish178 kavish178 898 May 22 01:22 ifconfig_output
+-rw-rw-r-- 1 kavish178 kavish178  36 May 22 01:21 new_file
+lrwxrwxrwx 1 kavish178 kavish178  30 May 22 01:39 shortcut -> /home/kavish178/Downloads/data
+kavish178@ubuntu:~/Downloads$ cat data
+my name is KaVish
+kavish178@ubuntu:~/Downloads$ cat shotcut
+cat: shotcut: No such file or directory
+kavish178@ubuntu:~/Downloads$ cat shortcut
+my name is KaVish
+kavish178@ubuntu:~/Downloads$ cd ..
+kavish178@ubuntu:~$ cd Downloads/
+kavish178@ubuntu:~/Downloads$ mc shortcut ..
+
+Command 'mc' not found, but can be installed with:
+
+sudo apt install mc
+
+kavish178@ubuntu:~/Downloads$ mv shortcut ..
+kavish178@ubuntu:~/Downloads$ cd ..
+kavish178@ubuntu:~$ ls
+Desktop    Downloads  new_data_file  Public    snap       Videos
+Documents  Music      Pictures       shortcut  Templates
+kavish178@ubuntu:~$ cat shortcut
+my name is KaVish
+kavish178@ubuntu:~$ echo "Hello my name is above written" >> shortcut
+kavish178@ubuntu:~$ cd Downloads/
+kavish178@ubuntu:~/Downloads$ cat data
+my name is KaVish
+Hello my name is above written
+kavish178@ubuntu:~/Downloads$ ls -lh
+total 12K
+-rw-rw-r-- 1 kavish178 kavish178  49 May 22 01:42 data
+-rw-rw-r-- 1 kavish178 kavish178 898 May 22 01:22 ifconfig_output
+-rw-rw-r-- 1 kavish178 kavish178  36 May 22 01:21 new_file
+kavish178@ubuntu:~/Downloads$ ln -s data shortcut
+kavish178@ubuntu:~/Downloads$ ls
+data  ifconfig_output  new_file  shortcut
+kavish178@ubuntu:~/Downloads$ ls -lh
+total 12K
+-rw-rw-r-- 1 kavish178 kavish178  49 May 22 01:42 data
+-rw-rw-r-- 1 kavish178 kavish178 898 May 22 01:22 ifconfig_output
+-rw-rw-r-- 1 kavish178 kavish178  36 May 22 01:21 new_file
+lrwxrwxrwx 1 kavish178 kavish178   4 May 22 01:45 shortcut -> data
+kavish178@ubuntu:~/Downloads$ cat shortcut
+my name is KaVish
+Hello my name is above written
+kavish178@ubuntu:~/Downloads$ mv shortcut Public/
+mv: cannot move 'shortcut' to 'Public/': Not a directory
+kavish178@ubuntu:~/Downloads$ mv shortcut ..
+kavish178@ubuntu:~/Downloads$ cd ..
+kavish178@ubuntu:~$ ls
+Desktop    Downloads  new_data_file  Public    snap       Videos
+Documents  Music      Pictures       shortcut  Templates
+kavish178@ubuntu:~$ ls -lh
+total 36K
+drwxr-xr-x 2 kavish178 kavish178 4.0K May 22 00:03 Desktop
+drwxr-xr-x 2 kavish178 kavish178 4.0K May 21 23:25 Documents
+drwxrwxr-x 2 kavish178 kavish178 4.0K May 22 01:46 Downloads
+drwxr-xr-x 2 kavish178 kavish178 4.0K May 21 11:11 Music
+-rw-rw-r-- 1 kavish178 kavish178    0 May 21 23:44 new_data_file
+drwxr-xr-x 2 kavish178 kavish178 4.0K May 21 11:11 Pictures
+drwxr-xr-x 2 kavish178 kavish178 4.0K May 21 23:59 Public
+lrwxrwxrwx 1 kavish178 kavish178    4 May 22 01:45 shortcut -> data
+drwxr-xr-x 4 kavish178 kavish178 4.0K May 21 11:26 snap
+drwxr-xr-x 2 kavish178 kavish178 4.0K May 21 11:11 Templates
+drwxr-xr-x 2 kavish178 kavish178 4.0K May 21 11:11 Videos
+kavish178@ubuntu:~$ cat shortcut
+cat: shortcut: No such file or directory
+kavish178@ubuntu:~$ cat "This is the new data file" > data
+cat: 'This is the new data file': No such file or directory
+kavish178@ubuntu:~$ echo "This is the new data file" > data
+kavish178@ubuntu:~$ ls
+data     Documents  Music          Pictures  shortcut  Templates
+Desktop  Downloads  new_data_file  Public    snap      Videos
+kavish178@ubuntu:~$ ls -lh
+total 40K
+-rw-rw-r-- 1 kavish178 kavish178   26 May 22 01:47 data
+drwxr-xr-x 2 kavish178 kavish178 4.0K May 22 00:03 Desktop
+drwxr-xr-x 2 kavish178 kavish178 4.0K May 21 23:25 Documents
+drwxrwxr-x 2 kavish178 kavish178 4.0K May 22 01:46 Downloads
+drwxr-xr-x 2 kavish178 kavish178 4.0K May 21 11:11 Music
+-rw-rw-r-- 1 kavish178 kavish178    0 May 21 23:44 new_data_file
+drwxr-xr-x 2 kavish178 kavish178 4.0K May 21 11:11 Pictures
+drwxr-xr-x 2 kavish178 kavish178 4.0K May 21 23:59 Public
+lrwxrwxrwx 1 kavish178 kavish178    4 May 22 01:45 shortcut -> data
+drwxr-xr-x 4 kavish178 kavish178 4.0K May 21 11:26 snap
+drwxr-xr-x 2 kavish178 kavish178 4.0K May 21 11:11 Templates
+drwxr-xr-x 2 kavish178 kavish178 4.0K May 21 11:11 Videos
+kavish178@ubuntu:~$ cat shortcut
+This is the new data file
+kavish178@ubuntu:~$
+
+### vi text editor commands
+
+notepad within terminal
+////////// type i to insert and save it using  save commands  thus press escape and the commands we need to enter
+Press Esc
+w to save the file
+q for quit q! for force quit
+qq wite and exit
+wq for write and quit
+
+kavish178@ubuntu:~$ cd Desktop/
+kavish178@ubuntu:~/Desktop$ ls -lh
+total 32K
+-rw-rw-r-- 1 kavish178 kavish178  18K May 22 00:03 'Linux Commands'
+-rw-rw-r-- 1 kavish178 kavish178    2 May 21 22:37 'Linux Commands.txt'
+-rw-rw-r-- 1 kavish178 kavish178 8.0K May 21 23:22 'Linx Commands.bkp'
+kavish178@ubuntu:~/Desktop$ vi File_text.txt
+kavish178@ubuntu:~/Desktop$ vi File_text.txt
+kavish178@ubuntu:~/Desktop$ vi File_text.txt
+kavish178@ubuntu:~/Desktop$ vi File_text.txt
+kavish178@ubuntu:~/Desktop$ vi File_text.txt
+kavish178@ubuntu:~/Desktop$ cat File_text
+cat: File_text: No such file or directory
+kavish178@ubuntu:~/Desktop$ cat File_text.txt
+this is kavish pandit
+ i study in vit
+i  am about to delet a
+kavish178@ubuntu:~/Desktop$
+
+### aliases
+
+to write aliases
+temporary aliases and then permanent ones
+//////////
+avish178@ubuntu:~$ cat  /home/kavish178/.bash_aliases
+alias cls='clear'
+kavish178@ubuntu:~$ echo "alias cls='clear'" >> /home/kavish178/.bash_aliases
+kavish178@ubuntu:~$ alias cls='clear'
+kavish178@ubuntu:~$ ls -lh
+total 40K
+-rw-rw-r-- 1 kavish178 kavish178   26 May 22 01:47 data
+drwxr-xr-x 2 kavish178 kavish178 4.0K May 22 03:00 Desktop
+drwxr-xr-x 2 kavish178 kavish178 4.0K May 21 23:25 Documents
+drwxrwxr-x 2 kavish178 kavish178 4.0K May 22 02:50 Downloads
+drwxr-xr-x 2 kavish178 kavish178 4.0K May 21 11:11 Music
+-rw-rw-r-- 1 kavish178 kavish178    0 May 21 23:44 new_data_file
+drwxr-xr-x 2 kavish178 kavish178 4.0K May 21 11:11 Pictures
+drwxr-xr-x 2 kavish178 kavish178 4.0K May 21 23:59 Public
+lrwxrwxrwx 1 kavish178 kavish178    4 May 22 01:45 shortcut -> data
+drwxr-xr-x 4 kavish178 kavish178 4.0K May 21 11:26 snap
+drwxr-xr-x 2 kavish178 kavish178 4.0K May 21 11:11 Templates
+drwxr-xr-x 2 kavish178 kavish178 4.0K May 21 11:11 Videos
+kavish178@ubuntu:~$ echo "alias rm='rm -i'">> .bash_aliases
+kavish178@ubuntu:~$ cat  /home/kavish178/.bash_aliases
+alias cls='clear'
+alias cls='clear'
+alias rm='rm -i'
+
+### multiple pipes
+
+kavish178@ubuntu:~$ date
+Fri 22 May 2020 03:08:09 AM PDT
+kavish178@ubuntu:~$ date | cut -d " "
+cut: you must specify a list of bytes, characters, or fields
+Try 'cut --help' for more information.
+kavish178@ubuntu:~$ date | cut -d " " -f 1
+Fri
+kavish178@ubuntu:~$ date | cut -d " " -f 2
+22
+kavish178@ubuntu:~$ date | cut -d " " -f 3
+May
+kavish178@ubuntu:~$ date | cut -d " " -f 4
+2020
+kavish178@ubuntu:~$ ifconfig
+ens33: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.168.50.128  netmask 255.255.255.0  broadcast 192.168.50.255
+        inet6 fe80::6b1a:6a43:4f67:2882  prefixlen 64  scopeid 0x20<link>
+        ether 00:0c:29:ca:e0:28  txqueuelen 1000  (Ethernet)
+        RX packets 132696  bytes 100659270 (100.6 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 63251  bytes 6629939 (6.6 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 17520  bytes 1441125 (1.4 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 17520  bytes 1441125 (1.4 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+kavish178@ubuntu:~$ ifconfig | grep "inet addr"
+kavish178@ubuntu:~$ echo ifconfig | grep "inet addr"
+kavish178@ubuntu:~$ ifconfig | grep "bytes"
+        RX packets 132935  bytes 100707821 (100.7 MB)
+        TX packets 63461  bytes 6666286 (6.6 MB)
+        RX packets 17578  bytes 1446449 (1.4 MB)
+        TX packets 17578  bytes 1446449 (1.4 MB)
+kavish178@ubuntu:~$ ifconfig | grep "errors"
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+kavish178@ubuntu:~$ ifconfig | grep "errors" | head -n 3
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        RX errors 0  dropped 0  overruns 0  frame 0
+kavish178@ubuntu:~$ ifconfig | grep "errors" | tail -n 3
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+kavish178@ubuntu:~$ ifconfig | grep "errors" | tail -n 3 | cut -d "0"
+cut: you must specify a list of bytes, characters, or fields
+Try 'cut --help' for more information.
+kavish178@ubuntu:~$ ifconfig | grep "errors" | tail -n 3 | cut -d "0" -f 3
+ overruns
+  overruns
+ overruns
+kavish178@ubuntu:~$ ifconfig | grep "errors" | tail -n 3 | cut -d "error" -f 2
+cut: the delimiter must be a single character
+Try 'cut --help' for more information.
+kavish178@ubuntu:~$ ifconfig | grep "errors" | tail -n 3 | cut -d "0" -f 2
+  dropped
+  dropped
+  dropped
+kavish178@ubuntu:~$ ifconfig | grep "errors" | tail -n 3 | cut -d "0" -f 1
+        TX errors
+        RX errors
+        TX errors
+kavish178@ubuntu:~$ ifconfig | grep "errors" | tail -n 3 | cut -d "0" -f 4
+  carrier
+  frame
+  carrier
+kavish178@ubuntu:~$ ifconfig | grep "errors" | tail -n 3 | cut -d "0" -f 5
+  collisions
+
+  collisions
+kavish178@ubuntu:~$
+
+### sed commands
+
+text extraction and replacing it
+kavish178@ubuntu:~$ cd Downloads/
+kavish178@ubuntu:~/Downloads$ ls
+data  ifconfig_output  new_file
+kavish178@ubuntu:~/Downloads$ cat data
+grep lets you to search through a text for a specific string
+this is a line
+this is another line
+this is the last line
+This is the last line
+This
+kavish178@ubuntu:~/Downloads$ cat data | sed 's/this/Dis/'
+grep lets you to search through a text for a specific string
+Dis is a line
+Dis is another line
+Dis is the last line
+This is the last line
+This
+kavish178@ubuntu:~/Downloads$ echo date >>data
+kavish178@ubuntu:~/Downloads$ cat data
+grep lets you to search through a text for a specific string
+this is a line
+this is another line
+this is the last line
+This is the last line
+This
+date
+kavish178@ubuntu:~/Downloads$ date
+Fri 22 May 2020 03:19:07 AM PDT
+kavish178@ubuntu:~/Downloads$ echo 23:12 23 Aug 2017 >>data
+kavish178@ubuntu:~/Downloads$ cat data
+grep lets you to search through a text for a specific string
+this is a line
+this is another line
+this is the last line
+This is the last line
+This
+date
+23:12 23 Aug 2017
+kavish178@ubuntu:~/Downloads$ cat data | sed 's/[0-9][0-9]:[0-9][0-9]/**:**/g'
+grep lets you to search through a text for a specific string
+this is a line
+this is another line
+this is the last line
+This is the last line
+This
+date
+**:** 23 Aug 2017
+kavish178@ubuntu:~/Downloads$ cat data | sed 's/[0-9][0-9]:[0-9][0-9]/**:**/g' >> data
+kavish178@ubuntu:~/Downloads$ cat data
+grep lets you to search through a text for a specific string
+this is a line
+this is another line
+this is the last line
+This is the last line
+This
+date
+23:12 23 Aug 2017
+grep lets you to search through a text for a specific string
+this is a line
+this is another line
+this is the last line
+This is the last line
+This
+date
+**:** 23 Aug 2017
+kavish178@ubuntu:~/Downloads$ sed -i 's/this/dis/g' >> data
+sed: no input files
+kavish178@ubuntu:~/Downloads$ sed -i 's/this/dis/' >> data
+sed: no input files
+kavish178@ubuntu:~/Downloads$ sed -i 's/this/dis/'  data
+kavish178@ubuntu:~/Downloads$ cat data
+grep lets you to search through a text for a specific string
+dis is a line
+dis is another line
+dis is the last line
+This is the last line
+This
+date
+23:12 23 Aug 2017
+grep lets you to search through a text for a specific string
+dis is a line
+dis is another line
+dis is the last line
+This is the last line
+This
+date
+**:** 23 Aug 2017
+kavish178@ubuntu:~/Downloads$
+
+
+### permisiions
+
+more than  one user can use the computer at the same time
+there are 5 commnds
+chmod - modify file access rights
+su - switch to super user
+sudo - run a command as a super user
+chown - change file owner ship
+chgrp- change file group
+Rights can be assigned  to read a file to write a file and to execute a file
+to see the permission for a file : ls-lh
+the ownership is clearely mession
+-rw-rw-r-- 1 kavish178
+-rw read and write
+memeber of the user can see the file
+-rw members can read and write the file
+-r means others can only read the file
+ls -lh /bin/bash
+-rwxrw-r--
+- means file type
+rwx owner read write execute
+rw read and write for the group
+r for the other mebers
+Permissions
+the letters
+u stands for user
+g stands for group
+o stands for others
+a stands for all
+chmod<u/g/o/a><+/-><r/w/x>
+example chmod u+x new file
+change the ownership using chown
+and change the grp using chgrp
+chown orot file.txt
+HOw to become a superuser for a while
+su and write to password
+and to exit the session type esit
+the command sudo lets u to run a command without to switch to super and thus gives a permission to get sudo
+
+### examples in cli
+
+kavish178@ubuntu:~/Downloads$ cd ..
+kavish178@ubuntu:~$ pwd
+/home/kavish178
+kavish178@ubuntu:~$ ls -lh
+total 40K
+-rw-rw-r-- 1 kavish178 kavish178   26 May 22 01:47 data
+drwxr-xr-x 2 kavish178 kavish178 4.0K May 22 03:00 Desktop
+drwxr-xr-x 2 kavish178 kavish178 4.0K May 21 23:25 Documents
+drwxrwxr-x 2 kavish178 kavish178 4.0K May 22 03:24 Downloads
+drwxr-xr-x 2 kavish178 kavish178 4.0K May 21 11:11 Music
+-rw-rw-r-- 1 kavish178 kavish178    0 May 21 23:44 new_data_file
+drwxr-xr-x 2 kavish178 kavish178 4.0K May 21 11:11 Pictures
+drwxr-xr-x 2 kavish178 kavish178 4.0K May 21 23:59 Public
+lrwxrwxrwx 1 kavish178 kavish178    4 May 22 01:45 shortcut -> data
+drwxr-xr-x 4 kavish178 kavish178 4.0K May 21 11:26 snap
+drwxr-xr-x 2 kavish178 kavish178 4.0K May 21 11:11 Templates
+drwxr-xr-x 2 kavish178 kavish178 4.0K May 21 11:11 Videos
+kavish178@ubuntu:~$ chmod o+w new_data_file
+kavish178@ubuntu:~$ ls -lh
+total 40K
+-rw-rw-r-- 1 kavish178 kavish178   26 May 22 01:47 data
+drwxr-xr-x 2 kavish178 kavish178 4.0K May 22 03:00 Desktop
+drwxr-xr-x 2 kavish178 kavish178 4.0K May 21 23:25 Documents
+drwxrwxr-x 2 kavish178 kavish178 4.0K May 22 03:24 Downloads
+drwxr-xr-x 2 kavish178 kavish178 4.0K May 21 11:11 Music
+-rw-rw-rw- 1 kavish178 kavish178    0 May 21 23:44 new_data_file
+drwxr-xr-x 2 kavish178 kavish178 4.0K May 21 11:11 Pictures
+drwxr-xr-x 2 kavish178 kavish178 4.0K May 21 23:59 Public
+lrwxrwxrwx 1 kavish178 kavish178    4 May 22 01:45 shortcut -> data
+drwxr-xr-x 4 kavish178 kavish178 4.0K May 21 11:26 snap
+drwxr-xr-x 2 kavish178 kavish178 4.0K May 21 11:11 Templates
+drwxr-xr-x 2 kavish178 kavish178 4.0K May 21 11:11 Videos
+kavish178@ubuntu:~$ chown root new_data_file
+chown: changing ownership of 'new_data_file': Operation not permitted
+kavish178@ubuntu:~$ sudo chown root new_data_file
+[sudo] password for kavish178:
+kavish178@ubuntu:~$ sudo chown root new_data_file
+kavish178@ubuntu:~$ ls -lh
+total 40K
+-rw-rw-r-- 1 kavish178 kavish178   26 May 22 01:47 data
+drwxr-xr-x 2 kavish178 kavish178 4.0K May 22 03:00 Desktop
+drwxr-xr-x 2 kavish178 kavish178 4.0K May 21 23:25 Documents
+drwxrwxr-x 2 kavish178 kavish178 4.0K May 22 03:24 Downloads
+drwxr-xr-x 2 kavish178 kavish178 4.0K May 21 11:11 Music
+-rw-rw-rw- 1 root      kavish178    0 May 21 23:44 new_data_file
+drwxr-xr-x 2 kavish178 kavish178 4.0K May 21 11:11 Pictures
+drwxr-xr-x 2 kavish178 kavish178 4.0K May 21 23:59 Public
+lrwxrwxrwx 1 kavish178 kavish178    4 May 22 01:45 shortcut -> data
+drwxr-xr-x 4 kavish178 kavish178 4.0K May 21 11:26 snap
+drwxr-xr-x 2 kavish178 kavish178 4.0K May 21 11:11 Templates
+drwxr-xr-x 2 kavish178 kavish178 4.0K May 21 11:11 Videos
+kavish178@ubuntu:~$
