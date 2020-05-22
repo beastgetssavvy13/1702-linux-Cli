@@ -1,0 +1,264 @@
+<html>
+                <head>
+                <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+                <title>035 vi Cheat Sheet</title>
+                </head>
+                <body>
+                <div class="container">
+                <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <p class="lead"><table>  <tbody><tr>   <td>   <p><strong>vi   filename             </strong>
+
+   
+
+   </p></td><td>   <p>Open file
+
+   
+
+  </p></td></tr>  <tr>   <td>   <p><strong>vi -r   filename          </strong>
+
+   
+
+   </p></td><td>   <p>Recover a file from a crashed session
+
+   
+
+  </p></td></tr>  <tr>   <td>   <p><strong>vi +   filename           </strong>
+
+   
+
+   </p></td><td>   <p>Place the cursor on last line of the file
+
+   
+
+  </p></td></tr>  <tr>   <td>   <p><strong>vi +n   filename          </strong>
+
+   
+
+   </p></td><td>   <p>Place the cursor on nth line "n" the   file
+
+   
+
+  </p></td></tr>  <tr>   <td>   <p><strong>vi +/pattern   filename       </strong>
+
+   
+
+   </p></td><td>   <p>Place cursor on line with first occurrence of   “pattern”
+
+   
+
+  </p></td></tr>  <tr>   <td>   <p><strong>:w                      </strong>
+
+   
+
+   </p></td><td>   <p>Write the file to disk
+
+   
+
+  </p></td></tr>  <tr>   <td>   <p><strong>:w!                     </strong>
+
+   
+
+   </p></td><td>   <p>Write the file to disk even if read only
+
+   
+
+  </p></td></tr>  <tr>   <td>   <p><strong>:wq                     </strong>
+
+   
+
+   </p></td><td>   <p>Write the file to disk and exit
+
+   
+
+  </p></td></tr>  <tr>   <td>   <p><strong>:wq!                    </strong>
+
+   
+
+   </p></td><td>   <p>Write the file to disk even if read only and quit
+
+   
+
+  </p></td></tr>  <tr>   <td>   <p><strong>:q                      </strong>
+
+   
+
+   </p></td><td>   <p>Quit
+
+   
+
+  </p></td></tr>  <tr>   <td>   <p><strong>:q!                     </strong>
+
+   
+
+   </p></td><td>   <p>Force Quit
+
+   
+
+  </p></td></tr>  <tr>   <td>   <p><strong>A                       </strong>
+
+   
+
+   </p></td><td>   <p>Move to end of the line and change to insert mode.
+
+   
+
+  </p></td></tr>  <tr>   <td>   <p><strong>h                       </strong>
+
+   
+
+   </p></td><td>   <p>(left arrow)
+
+   
+
+  </p></td></tr>  <tr>   <td>   <p><strong>j                       </strong>
+
+   
+
+   </p></td><td>   <p>(down arrow)
+
+   
+
+  </p></td></tr>  <tr>   <td>   <p><strong>k                       </strong>
+
+   
+
+   </p></td><td>   <p>(up arrow)
+
+   
+
+  </p></td></tr>  <tr>   <td>   <p><strong>l                       </strong>
+
+   
+
+   </p></td><td>   <p>(right arrow)
+
+   
+
+  </p></td></tr>  <tr>   <td>   <p><strong>w                       </strong>
+
+   
+
+   </p></td><td>   <p>Move cursor to start of the next word
+
+   
+
+  </p></td></tr>  <tr>   <td>   <p><strong>b                       </strong>
+
+   
+
+   </p></td><td>   <p>Move cursor to start of the previous word
+
+   
+
+  </p></td></tr>  <tr>   <td>   <p><strong>:n                      </strong>
+
+   
+
+   </p></td><td>   <p>Go to nth line
+
+   
+
+  </p></td></tr>  <tr>   <td>   <p><strong>i                       </strong>
+
+   
+
+   </p></td><td>   <p>Go into insert mode
+
+   
+
+  </p></td></tr>  <tr>   <td>   <p><strong>o                       </strong>
+
+   
+
+   </p></td><td>   <p>Add a line below cursor and go into insert mode
+
+   
+
+  </p></td></tr>  <tr>   <td>   <p><strong>x                       </strong>
+
+   
+
+   </p></td><td>   <p>Delete character
+
+   
+
+  </p></td></tr>  <tr>   <td>   <p><strong>D                       </strong>
+
+   
+
+   </p></td><td>   <p>Delete line from the right of cursor to the end   of  the line
+
+   
+
+  </p></td></tr>  <tr>   <td>   <p><strong>dd                      </strong>
+
+   
+
+   </p></td><td>   <p>Delete line
+
+   
+
+  </p></td></tr>  <tr>   <td>   <p><strong>u                       </strong>
+
+   
+
+   </p></td><td>   <p>Undo last edit
+
+   
+
+  </p></td></tr>  <tr>   <td>   <p><strong>yy                      </strong>
+
+   
+
+   </p></td><td>   <p>Yank current line
+
+   
+
+  </p></td></tr>  <tr>   <td>   <p><strong>p                       </strong>
+
+   
+
+   </p></td><td>   <p>Put yanked text before the cursor
+
+   
+
+  </p></td></tr>  <tr>   <td>   <p><strong>/pattern               </strong>
+
+   
+
+   </p></td><td>   <p>Search for "pattern" in the file going   forwards
+
+   
+
+  </p></td></tr>  <tr>   <td>   <p><strong>?pattern               </strong>
+
+   
+
+   </p></td><td>   <p>Search for "pattern" in the file going   backwards
+
+   
+
+  </p></td></tr>  <tr>   <td>   <p><strong>n                      </strong>
+
+   
+
+   </p></td><td>   <p>Find the next occurrence of pattern found forwards
+
+   
+
+  </p></td></tr>  <tr>   <td>   <p><strong>N                      </strong>
+
+   
+
+   </p></td><td>   <p>Find next occurrence of pattern found backwards
+
+   
+
+  </p></td></tr> </tbody></table></p>
+                </div>
+                </div>
+                </div>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+                </body>
+                </html>
