@@ -1,5 +1,5 @@
 ## The Pixelated Coder  :man_technologist:
-
+<br>
 <h1 align="center">Linux/Unix Commands :penguin: </h1>
 <h3 align="center"> Operating Linux becomes easy if you know the right commands :bulb:</h3>
 
@@ -9,16 +9,18 @@
 
 _My journey of 1702 lines of linux commands using vmwareworkstation_
 
-## Technologies Used: 
-:electric_plug: WINDOWS OS :electric_plug: VMWARE WORKSTATION :electric_plug: UBUNTU DESKTOP :electric_plug: VI EDITOR <br>
-
-
 ## Who is this repository for? 
 
 A Windows Os User Keen To Learn Essential Linux Commands. Provided below Link to My Journey Of Using Basic Linux Commands Through Emulator Linux. And also provided is list of many useful basic linux command lines that I used.
 
 ### Link to My Journey | :alien:
 :link: - [Linux Link](https://github.com/beastgetssavvy13/1702-Linux-Cli/blob/master/cliterminal.txt)
+
+------------------------------------------------------------------------------------------------------------------------
+
+## Technologies Used: 
+:electric_plug: WINDOWS OS :electric_plug: VMWARE WORKSTATION :electric_plug: UBUNTU DESKTOP :electric_plug: VI EDITOR <br>
+
 
 ## Linux Commands used day to day
 - `acpi`- _to display battery status and other acpi information_
