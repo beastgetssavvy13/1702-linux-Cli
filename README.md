@@ -1,8 +1,8 @@
 <h1 align="center">Linux/Unix Commands :penguin: </h1>
-<h3 align="center">Operating Linux becomes easy if you know the right commands</h3>
+<h3 align="center"> Operating Linux becomes easy if you know the right commands :bulb:</h3>
 
 
-## What is this repository for?
+## What is this repository for? 
 
 This is list of many useful basic linux command lines.
 
