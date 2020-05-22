@@ -1,4 +1,4 @@
-<h1 align="center">Linux/Unix Commands</h1>
+<h1 align="center">Linux/Unix Commands :penguin: </h1>
 <h3 align="center">Operating Linux becomes easy if you know the right commands</h3>
 
 
